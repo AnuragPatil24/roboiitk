@@ -14,7 +14,7 @@ const projects = [
         category: "Planetary Exploration",
         description:
             "A rover is an autonomous or remote-controlled vehicle designed to traverse extraterrestrial terrain. Equipped with specialized sensors and robust suspension, it explores planetary surfaces, collects vital geological samples, and searches for biological presence",
-        image: "/projects/rover-f.png", // Placeholder
+        image: "/roboiitk/projects/rover-f.png", // Placeholder
         techStack: ["ROS", "Electronics", "Rockerbogie", "Differential"],
         docLink: "Coming Soon",
     },
@@ -24,7 +24,7 @@ const projects = [
         category: "Legged Robotics",
         description:
             "A hexapod is a six-legged robot using biomimetic walking gaits for superior stability. Unlike wheeled rovers, it employs Inverse Kinematics to navigate extreme, uneven terrain by lifting and placing each leg, ensuring constant static balance.",
-        image: "/projects/Hexapod.png", // Placeholder
+        image: "/roboiitk/projects/Hexapod.png", // Placeholder
         techStack: ["Controller", "PID", "Inverse Kinematics", "Servo"],
         docLink: "https://github.com/RoboticsClubIITK/Hexapod_Summer_Project_2025",
     },
@@ -34,7 +34,7 @@ const projects = [
         category: "Chess Playing Robot",
         description:
             "The Mechanical Turk at the IITK Robotics Club is an autonomous chess-playing robot. It uses Computer Vision to detect opponent moves, a chess engine for strategy, and a 2-DOF robotic arm with an electromagnet to physically move the pieces.",
-        image: "/projects/Turk.png", // Placeholder
+        image: "/roboiitk/projects/Turk.png", // Placeholder
         techStack: ["Mechanical Design", "Computer Vision", "Inverse Kinematics"],
         docLink: "#",
         githubLink: "#",
@@ -45,7 +45,7 @@ const projects = [
         category: "Playing Robot",
         description:
             "A Ball Balancing Bot is a dynamically stable robot that maintains its center of gravity over a single spherical wheel. Using omni-wheels and high-speed IMU feedback, it performs continuous micro-adjustments to remain upright, offering 360-degree maneuverability in tight spaces.",
-        image: "/projects/ball.png", // Placeholder
+        image: "/roboiitk/projects/ball.png", // Placeholder
         techStack: ["Control Theory", "IMU", "PID", "Omni-wheels"],
         docLink: "#",
         githubLink: "#",
@@ -56,7 +56,7 @@ const projects = [
         category: "Stairs climbing bot",
         description:
             "StepXplorer is an autonomous stair-climbing robot at the IITK Robotics Club. It uses ultrasonic sensors for distance-based stair detection and stepper motors for high-precision motion control, ensuring stable ascent and real-time failure recovery during vertical transitions.",
-        image: "/projects/StepClimbing.png", // Placeholder
+        image: "/roboiitk/projects/StepClimbing.png", // Placeholder
         techStack: ["BNO055", "Utlrasonic Sensors", "PID", "Stepper Motors", "Mega 2560"],
         docLink: "https://github.com/RoboticsClubIITK/StepXplorer-Summer-Project-2025-",
         githubLink: "#",
@@ -67,7 +67,7 @@ const projects = [
         category: "Self Balancing Robot",
         description:
             "A Gyrobot is a self-balancing robot that maintains its upright posture using gyroscopic precession. Unlike common two-wheeled balancers, it often uses an internal high-speed flywheel to generate a corrective torque, allowing it to remain stable even when completely stationary.",
-        image: "/projects/Gyrobot.png", // Placeholder
+        image: "/roboiitk/projects/Gyrobot.png", // Placeholder
         techStack: ["BNO055", "IMU", "PID", "LQR", "Teensy"],
         docLink: "https://github.com/RoboticsClubIITK/Gyrobot",
         githubLink: "#",

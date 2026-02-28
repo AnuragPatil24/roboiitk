@@ -46,7 +46,7 @@ export function Footer() {
                         <div className="flex flex-col gap-2">
                             <Link className="flex items-center space-x-2" href="/">
                                 <Image
-                                    src="/logo.png"
+                                    src="/roboiitk/logo.png"
                                     alt="Logo"
                                     width={300}
                                     height={300}
