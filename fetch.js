@@ -1,0 +1,1 @@
+﻿fetch('https://anuragpatil24.github.io/roboiitk/?v=' + Date.now()).then(r => r.text()).then(t => { console.log('Logo match: ', t.match(/src=[\"\u0027](\/[^\"\u0027]*logo.*?.png)[\"\u0027]/)); process.exit(0); })

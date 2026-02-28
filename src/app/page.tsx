@@ -9,10 +9,10 @@ import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const backgroundImages = [
-  "/roboiitk/diwali.jpeg", // Diwali Celebration
-  "/roboiitk/session.jpeg", // Club Session
-  "/roboiitk/oat.jpeg", // OAT Event
-  "/roboiitk/dog.jpeg", // Dog
+  "/diwali.jpeg", // Diwali Celebration
+  "/session.jpeg", // Club Session
+  "/oat.jpeg", // OAT Event
+  "/dog.jpeg", // Dog
 ];
 
 function BackgroundSlider() {

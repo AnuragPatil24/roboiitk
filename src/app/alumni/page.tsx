@@ -9,62 +9,62 @@ import Image from "next/image";
 
 const alumniData = {
     "2024-25": [
-        { name: "Aayush Jaiswal", role: "Coordinator", image: "/roboiitk/Alumni/2024 - 25/Aayush Jaiswal.jpeg", linkedin: "https://www.linkedin.com/in/aayush-jaiswal-431b34223/" },
-        { name: "Manvi Bengani", role: "Coordinator", image: "/roboiitk/Alumni/2024 - 25/manvi Bengani.jpg", linkedin: "https://www.linkedin.com/in/manvi-bengani-7397641b0/" },
-        { name: "Yuval Bansal", role: "Coordinator", image: "/roboiitk/Alumni/2024 - 25/Yuval Bansal.jpg", linkedin: "https://www.linkedin.com/in/yuval-bansal-01465b212/" }
+        { name: "Aayush Jaiswal", role: "Coordinator", image: "/Alumni/2024 - 25/Aayush Jaiswal.jpeg", linkedin: "https://www.linkedin.com/in/aayush-jaiswal-431b34223/" },
+        { name: "Manvi Bengani", role: "Coordinator", image: "/Alumni/2024 - 25/manvi Bengani.jpg", linkedin: "https://www.linkedin.com/in/manvi-bengani-7397641b0/" },
+        { name: "Yuval Bansal", role: "Coordinator", image: "/Alumni/2024 - 25/Yuval Bansal.jpg", linkedin: "https://www.linkedin.com/in/yuval-bansal-01465b212/" }
     ],
     "2023-24": [
-        { name: "Aniket Sen", role: "Coordinator", image: "/roboiitk/Alumni/2023 -24/Aniket Sen.jpg", linkedin: "https://www.linkedin.com/mwlite/in/aniketsen001" },
-        { name: "Aryan Kumar", role: "Coordinator", image: "/roboiitk/Alumni/2023 -24/Aryan Kumar.jpg", linkedin: "https://www.linkedin.com/in/aryan-kumar-524b20257" },
-        { name: "Om Shivam Verma", role: "Coordinator", image: "/roboiitk/Alumni/2023 -24/Om Shivam Verma.jpeg", linkedin: "https://www.linkedin.com/in/om-shivam-verma-5b5092230/" },
-        { name: "Shaurya Singh", role: "Coordinator", image: "/roboiitk/Alumni/2023 -24/Shaurya Singh.jpeg", linkedin: "https://www.linkedin.com/in/shaurya-singh-b44457199" }
+        { name: "Aniket Sen", role: "Coordinator", image: "/Alumni/2023 -24/Aniket Sen.jpg", linkedin: "https://www.linkedin.com/mwlite/in/aniketsen001" },
+        { name: "Aryan Kumar", role: "Coordinator", image: "/Alumni/2023 -24/Aryan Kumar.jpg", linkedin: "https://www.linkedin.com/in/aryan-kumar-524b20257" },
+        { name: "Om Shivam Verma", role: "Coordinator", image: "/Alumni/2023 -24/Om Shivam Verma.jpeg", linkedin: "https://www.linkedin.com/in/om-shivam-verma-5b5092230/" },
+        { name: "Shaurya Singh", role: "Coordinator", image: "/Alumni/2023 -24/Shaurya Singh.jpeg", linkedin: "https://www.linkedin.com/in/shaurya-singh-b44457199" }
     ],
     "2022-23": [
-        { name: "Akshat Arya", role: "Coordinator", image: "/roboiitk/Alumni/2022 - 23/Akshat Arya.jpg", linkedin: "https://www.linkedin.com/in/akshat-arya-4b0318202/" },
-        { name: "Arnav Panday", role: "Coordinator", image: "/roboiitk/Alumni/2022 - 23/Arnav Panday.jpg", linkedin: "#" },
-        { name: "Aryan Jain", role: "Coordinator", image: "/roboiitk/Alumni/2022 - 23/Aryan Jain.jpg", linkedin: "https://www.linkedin.com/in/aryan-jain-1908/" },
-        { name: "Suhani", role: "Coordinator", image: "/roboiitk/Alumni/2022 - 23/Suhani.jpg", linkedin: "https://www.linkedin.com/in/suhani-sharma-39a0591b3" }
+        { name: "Akshat Arya", role: "Coordinator", image: "/Alumni/2022 - 23/Akshat Arya.jpg", linkedin: "https://www.linkedin.com/in/akshat-arya-4b0318202/" },
+        { name: "Arnav Panday", role: "Coordinator", image: "/Alumni/2022 - 23/Arnav Panday.jpg", linkedin: "#" },
+        { name: "Aryan Jain", role: "Coordinator", image: "/Alumni/2022 - 23/Aryan Jain.jpg", linkedin: "https://www.linkedin.com/in/aryan-jain-1908/" },
+        { name: "Suhani", role: "Coordinator", image: "/Alumni/2022 - 23/Suhani.jpg", linkedin: "https://www.linkedin.com/in/suhani-sharma-39a0591b3" }
     ],
     "2021-22": [
-        { name: "Adit Khokar", role: "Coordinator", image: "/roboiitk/Alumni/2021 - 22/adit Khokar.jpg", linkedin: "#" },
-        { name: "Azhar Tanweer", role: "Coordinator", image: "/roboiitk/Alumni/2021 - 22/azhar Tanweer.jpg", linkedin: "#" },
-        { name: "Jaagrati Jain", role: "Coordinator", image: "/roboiitk/Alumni/2021 - 22/jaagrati Jain.jpg", linkedin: "#" },
-        { name: "Prateek Jain", role: "Coordinator", image: "/roboiitk/Alumni/2021 - 22/prateek Jain.jpg", linkedin: "#" }
+        { name: "Adit Khokar", role: "Coordinator", image: "/Alumni/2021 - 22/adit Khokar.jpg", linkedin: "#" },
+        { name: "Azhar Tanweer", role: "Coordinator", image: "/Alumni/2021 - 22/azhar Tanweer.jpg", linkedin: "#" },
+        { name: "Jaagrati Jain", role: "Coordinator", image: "/Alumni/2021 - 22/jaagrati Jain.jpg", linkedin: "#" },
+        { name: "Prateek Jain", role: "Coordinator", image: "/Alumni/2021 - 22/prateek Jain.jpg", linkedin: "#" }
     ],
     "2020-21": [
-        { name: "Prakash Choudhary", role: "Coordinator", image: "/roboiitk/Alumni/2020 -21/prakash.jpg", linkedin: "#" },
-        { name: "Ramyata Pate", role: "Coordinator", image: "/roboiitk/Alumni/2020 -21/ramyata Pate.jpg", linkedin: "#" },
-        { name: "Suman Singha", role: "Coordinator", image: "/roboiitk/Alumni/2020 -21/suman Singha.jpg", linkedin: "#" }
+        { name: "Prakash Choudhary", role: "Coordinator", image: "/Alumni/2020 -21/prakash.jpg", linkedin: "#" },
+        { name: "Ramyata Pate", role: "Coordinator", image: "/Alumni/2020 -21/ramyata Pate.jpg", linkedin: "#" },
+        { name: "Suman Singha", role: "Coordinator", image: "/Alumni/2020 -21/suman Singha.jpg", linkedin: "#" }
     ],
     "2019-20": [
-        { name: "Abhay Varshney", role: "Coordinator", image: "/roboiitk/Alumni/2019-20/abhay Varshney.jpg", linkedin: "#" },
-        { name: "Madhur Deep Jain", role: "Coordinator", image: "/roboiitk/Alumni/2019-20/madhur Deep Jain.jpg", linkedin: "#" },
-        { name: "Neil Shirude", role: "Coordinator", image: "/roboiitk/Alumni/2019-20/Neil Shirude.jpg", linkedin: "#" }
+        { name: "Abhay Varshney", role: "Coordinator", image: "/Alumni/2019-20/abhay Varshney.jpg", linkedin: "#" },
+        { name: "Madhur Deep Jain", role: "Coordinator", image: "/Alumni/2019-20/madhur Deep Jain.jpg", linkedin: "#" },
+        { name: "Neil Shirude", role: "Coordinator", image: "/Alumni/2019-20/Neil Shirude.jpg", linkedin: "#" }
     ],
     "2018-19": [
-        { name: "Ayush Singh", role: "Coordinator", image: "/roboiitk/Alumni/2018 - 19/ayush Singh.png", linkedin: "#" },
-        { name: "Manas Rawat", role: "Coordinator", image: "/roboiitk/Alumni/2018 - 19/manas Rawat.png", linkedin: "#" },
-        { name: "Maneet Kaur", role: "Coordinator", image: "/roboiitk/Alumni/2018 - 19/maneet Kaur.jpg", linkedin: "#" },
-        { name: "Suraj Mishra", role: "Coordinator", image: "/roboiitk/Alumni/2018 - 19/Suraj Mishra.jpg", linkedin: "#" }
+        { name: "Ayush Singh", role: "Coordinator", image: "/Alumni/2018 - 19/ayush Singh.png", linkedin: "#" },
+        { name: "Manas Rawat", role: "Coordinator", image: "/Alumni/2018 - 19/manas Rawat.png", linkedin: "#" },
+        { name: "Maneet Kaur", role: "Coordinator", image: "/Alumni/2018 - 19/maneet Kaur.jpg", linkedin: "#" },
+        { name: "Suraj Mishra", role: "Coordinator", image: "/Alumni/2018 - 19/Suraj Mishra.jpg", linkedin: "#" }
     ],
     "2017-18": [
-        { name: "Akash Jain", role: "Coordinator", image: "/roboiitk/Alumni/2017 - 18/Akash Jain.jpg", linkedin: "#" },
-        { name: "Bhuvi Gupta", role: "Coordinator", image: "/roboiitk/Alumni/2017 - 18/Bhuvi Gupta.jpg", linkedin: "#" },
-        { name: "Saurabh Ranjan", role: "Coordinator", image: "/roboiitk/Alumni/2017 - 18/Saurabh Ranjan.jpg", linkedin: "#" },
-        { name: "Ujjwal Varshney", role: "Coordinator", image: "/roboiitk/Alumni/2017 - 18/Ujjwal Varshney.jpg", linkedin: "#" }
+        { name: "Akash Jain", role: "Coordinator", image: "/Alumni/2017 - 18/Akash Jain.jpg", linkedin: "#" },
+        { name: "Bhuvi Gupta", role: "Coordinator", image: "/Alumni/2017 - 18/Bhuvi Gupta.jpg", linkedin: "#" },
+        { name: "Saurabh Ranjan", role: "Coordinator", image: "/Alumni/2017 - 18/Saurabh Ranjan.jpg", linkedin: "#" },
+        { name: "Ujjwal Varshney", role: "Coordinator", image: "/Alumni/2017 - 18/Ujjwal Varshney.jpg", linkedin: "#" }
     ],
     "2016-17": [
-        { name: "Ankit Kumar", role: "Coordinator", image: "/roboiitk/Alumni/2016 - 17/Ankit Kumar.jpg", linkedin: "#" },
-        { name: "Anvesh Jadon", role: "Coordinator", image: "/roboiitk/Alumni/2016 - 17/Anvesh Jadon.jpeg", linkedin: "#" },
-        { name: "Hemant Kumar", role: "Coordinator", image: "/roboiitk/Alumni/2016 - 17/Hemant Kumar.jpg", linkedin: "#" },
-        { name: "Mayank Mittal", role: "Coordinator", image: "/roboiitk/Alumni/2016 - 17/Mayank Mittal.jpg", linkedin: "#" },
+        { name: "Ankit Kumar", role: "Coordinator", image: "/Alumni/2016 - 17/Ankit Kumar.jpg", linkedin: "#" },
+        { name: "Anvesh Jadon", role: "Coordinator", image: "/Alumni/2016 - 17/Anvesh Jadon.jpeg", linkedin: "#" },
+        { name: "Hemant Kumar", role: "Coordinator", image: "/Alumni/2016 - 17/Hemant Kumar.jpg", linkedin: "#" },
+        { name: "Mayank Mittal", role: "Coordinator", image: "/Alumni/2016 - 17/Mayank Mittal.jpg", linkedin: "#" },
 
     ],
     "2015-16": [
-        { name: "Aakash Gupta", role: "Coordinator", image: "/roboiitk/Alumni/2015 - 16/Aakash Gupta.jpg", linkedin: "#" },
-        { name: "Amit Saharan", role: "Coordinator", image: "/roboiitk/Alumni/2015 - 16/Amit Saharan.jpeg", linkedin: "#" },
-        { name: "Ayush Poddar", role: "Coordinator", image: "/roboiitk/Alumni/2015 - 16/Ayush Poddar.jpg", linkedin: "#" },
-        { name: "Prashant Kumar", role: "Coordinator", image: "/roboiitk/Alumni/2015 - 16/Prashant Kumar.jpg", linkedin: "#" }
+        { name: "Aakash Gupta", role: "Coordinator", image: "/Alumni/2015 - 16/Aakash Gupta.jpg", linkedin: "#" },
+        { name: "Amit Saharan", role: "Coordinator", image: "/Alumni/2015 - 16/Amit Saharan.jpeg", linkedin: "#" },
+        { name: "Ayush Poddar", role: "Coordinator", image: "/Alumni/2015 - 16/Ayush Poddar.jpg", linkedin: "#" },
+        { name: "Prashant Kumar", role: "Coordinator", image: "/Alumni/2015 - 16/Prashant Kumar.jpg", linkedin: "#" }
     ]
 };
 

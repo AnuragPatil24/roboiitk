@@ -1,0 +1,44 @@
+﻿[
+    {
+        "name":  "Deploy Next.js to GitHub Pages",
+        "head_commit":  {
+                            "id":  "b0699545c623cd339ef7ae937d808e5a9fdd2530",
+                            "tree_id":  "163857c03f49c723fac8661fd68e997308c1e044",
+                            "message":  "Fix image paths for GitHub Pages sub-folder",
+                            "timestamp":  "2026-02-28T12:28:22Z",
+                            "author":  {
+                                           "name":  "Anurag Patil",
+                                           "email":  "anuragrp5002@gmail.com"
+                                       },
+                            "committer":  {
+                                              "name":  "Anurag Patil",
+                                              "email":  "anuragrp5002@gmail.com"
+                                          }
+                        },
+        "status":  "completed",
+        "conclusion":  "success",
+        "created_at":  "2026-02-28T12:28:35Z",
+        "updated_at":  "2026-02-28T12:29:27Z"
+    },
+    {
+        "name":  "Deploy Next.js to GitHub Pages",
+        "head_commit":  {
+                            "id":  "236916b7697d8944fc64230941cc8eae075226f2",
+                            "tree_id":  "3060836a6a9351e28201fa862755b8736a2b3b94",
+                            "message":  "Setup GitHub Pages deployment",
+                            "timestamp":  "2026-02-28T12:04:46Z",
+                            "author":  {
+                                           "name":  "Anurag Patil",
+                                           "email":  "anuragrp5002@gmail.com"
+                                       },
+                            "committer":  {
+                                              "name":  "Anurag Patil",
+                                              "email":  "anuragrp5002@gmail.com"
+                                          }
+                        },
+        "status":  "completed",
+        "conclusion":  "success",
+        "created_at":  "2026-02-28T12:05:57Z",
+        "updated_at":  "2026-02-28T12:30:21Z"
+    }
+]

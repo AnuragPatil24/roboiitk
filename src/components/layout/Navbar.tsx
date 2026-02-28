@@ -34,7 +34,7 @@ export function Navbar() {
                 <Link className="flex items-center space-x-2" href="/">
                     {/* <Bot className="h-8 w-8 text-primary" /> */}
                     <Image
-                        src="/roboiitk/logo.png"
+                        src="/logo.png"
                         alt="Robotics Club IITK Logo"
                         width={1000}
                         height={1000}
