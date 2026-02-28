@@ -2,7 +2,7 @@
 title: "Four Years in a Nutshell"
 author: "Swati Gupta, Member Robocon & IGVC."
 date: "12-01-2018"
-image: "/Blog/years.jpg"
+image: "/roboiitk/Blog/years.jpg"
 description: "Today, I would like to share with you, my journey at IIT Kanpur so far. Perhaps along the way, you will end up finding something fascinating enough to pursue, or else you just might learn not to make the same mistakes. Either way, It will be a worthwhile endeavor. I don’t generally write blogs, so I am not very sure how to go about this one. I will just try to make it an interesting read, and highlight the 4 major decisions I made ( branch selection, Robocon-IGVC, Summer Internship, Placements). If you find any of them less interesting, just skip the corresponding section and there will be no loss of continuity."
 ---
 

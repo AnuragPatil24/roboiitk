@@ -2,7 +2,7 @@
 title: "Scoring a job through Robotics Internship"
 author: "Robotics Club IITK"
 date: "2017-01-01"
-image: "/Blog/Plan.jpg"
+image: "/roboiitk/Blog/Plan.jpg"
 description: "Scoring a job through Robotics Internship. When you plan it right!  This blog post is about my experience while developing a C++ library for m..."
 ---
 

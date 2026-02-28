@@ -2,7 +2,7 @@
 title: "How to win Takneek 101"
 author: "Bhuvi Gupta, Ex-Coordinator'18"
 date: "19-07-2018"
-image: "/Blog/Takneek.jpg"
+image: "/roboiitk/Blog/Takneek.jpg"
 description: "From short circuits to success! A quick visual guide to avoiding common beginner mistakes, getting your basics right, and surviving your first technical competition."
 ---
 

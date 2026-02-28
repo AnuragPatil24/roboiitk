@@ -59,7 +59,7 @@ export default function EventsPage() {
             {/* AI Background Image */}
             <div className="fixed inset-0 z-0">
                 <Image
-                    src="/backgrounds/events-bg.png"
+                    src="/roboiitk/backgrounds/events-bg.png"
                     alt="Futuristic Robotics Background"
                     fill
                     className="object-cover opacity-10 grayscale-[50%]"
