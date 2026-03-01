@@ -4,8 +4,8 @@ const path = require('path');
 
 const PUBLIC_DIR = path.join(__dirname, '../public');
 // Keep clarity high, but prevent massive sizes
-const MAX_WIDTH = 1920;
-const QUALITY = 85; // Good balance for high clarity and lower file size
+const MAX_WIDTH = 1200;
+const QUALITY = 80; // Adjusted for even lower latency
 
 const processDirectory = async (dir) => {
     try {
@@ -39,7 +39,8 @@ const optimizeImage = async (filePath, ext) => {
         // Resize only if wider than MAX_WIDTH, otherwise keep original width
         const resizeOptions = metadata.width > MAX_WIDTH ? { width: MAX_WIDTH } : {};
 
-        let pipeline = image.resize(resizeOptions);
+        // .rotate() will automatically use EXIF data to orient the image correctly
+        let pipeline = image.rotate().resize(resizeOptions);
 
         if (ext === '.jpg' || ext === '.jpeg') {
             pipeline = pipeline.jpeg({ quality: QUALITY, progressive: true });
@@ -55,15 +56,10 @@ const optimizeImage = async (filePath, ext) => {
         const originalStat = await fs.promises.stat(filePath);
         const newStat = await fs.promises.stat(tempPath);
 
-        // Only replace if the new file is actually smaller
-        if (newStat.size < originalStat.size) {
-            await fs.promises.rename(tempPath, filePath);
-            const savedMB = ((originalStat.size - newStat.size) / (1024 * 1024)).toFixed(2);
-            console.log(`✅ Optimized ${path.basename(filePath)} - Saved ${savedMB} MB`);
-        } else {
-            await fs.promises.unlink(tempPath);
-            console.log(`⏭️ Skipped ${path.basename(filePath)} - Already optimized`);
-        }
+        // Replace the file to apply the new rotation and lower quality settings
+        await fs.promises.rename(tempPath, filePath);
+        const savedMB = ((originalStat.size - newStat.size) / (1024 * 1024)).toFixed(2);
+        console.log(`✅ Processed ${path.basename(filePath)} - Size diff: ${savedMB} MB`);
 
     } catch (error) {
         console.error(`Error optimizing ${filePath}:`, error);
