@@ -109,17 +109,15 @@ const MemberCard = ({ member }: { member: any }) => (
                     />
                 )}
 
-                {/* Social Overlay on Image - Hidden for Secretaries */}
-                {member.role !== "Secretary" && (
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 gap-6">
-                        <a href={member.linkedin || "#"} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors transform hover:scale-120">
-                            <Linkedin className="h-6 w-6" />
-                        </a>
-                        <a href={member.github || "#"} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors transform hover:scale-120">
-                            <Github className="h-6 w-6" />
-                        </a>
-                    </div>
-                )}
+                {/* Social Overlay on Image */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-6 gap-6">
+                    <a href={member.linkedin || "#"} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors transform hover:scale-120">
+                        <Linkedin className="h-6 w-6" />
+                    </a>
+                    <a href={member.github || "#"} target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition-colors transform hover:scale-120">
+                        <Github className="h-6 w-6" />
+                    </a>
+                </div>
             </div>
 
             <CardContent className="p-6 flex flex-col gap-3 flex-grow bg-card/10">
