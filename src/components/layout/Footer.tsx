@@ -55,7 +55,7 @@ export function Footer() {
                                 />
                             </Link>
                             <p className="text-lg text-muted-foreground max-w-sm">
-                                # Happy Roboting
+                                #HappyRoboting
                             </p>
                         </div>
 

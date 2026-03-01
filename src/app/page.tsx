@@ -113,7 +113,7 @@ export default function Home() {
         <div className="container px-4 md:px-8 text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">Get in Touch</h2>
           <p className="text-muted-foreground mb-8">
-            Have questions? innovative ideas? or just want to visit our lab?
+            Have questions? innovative ideas? or just want to visit our Club?
             Reach out to us.
           </p>
           <Button size="lg" variant="secondary" asChild>
