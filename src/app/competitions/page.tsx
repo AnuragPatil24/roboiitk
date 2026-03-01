@@ -7,27 +7,27 @@ import { Button } from "@/components/ui/button";
 
 const competitions = [
     {
-        id: "inter-iit",
-        title: "Inter-IIT Tech Meet",
-        description: "The ultimate battle of technical prowess among all IITs. We participate in high-stakes robotics problem statements ranging from DRDO challenges to autonomous navigation.",
-        status: "Annual",
-    },
-    {
-        id: "robocon",
-        title: "ABU Robocon",
-        description: "An international robotics competition. Teams build robots to perform tasks based on a specific theme relevant to the host country's culture.",
+        id: "irc",
+        title: "International Rover Challenge",
+        description: "An engineering design challenge to build a next-generation Mars rover. We push the boundaries of robotics in rough terrains.",
         status: "International",
     },
     {
-        id: "urc",
-        title: "University Rover Challenge (URC)",
-        description: "Held in the Mars Desert Research Station, Utah. We design and build the next generation of Mars Rovers to assist astronauts.",
+        id: "wrc",
+        title: "World Robotics Competition",
+        description: "A global robotics championship where teams tackle challenging problem statements and showcase cutting-edge automation capabilities.",
         status: "International",
     },
     {
-        id: "sauvc",
-        title: "SAUVC",
-        description: "Singapore AUV Challenge. Developing autonomous underwater vehicles to perform visual recognition and manipulation tasks.",
+        id: "sih",
+        title: "Smart India Hackathon",
+        description: "A nationwide initiative to provide students a platform to solve pressing problems in our daily lives, using hardware and tech solutions.",
+        status: "National",
+    },
+    {
+        id: "robofest",
+        title: "Robofest",
+        description: "An annual international robotics challenge focusing on autonomous robotics technologies to inspire students in STEM.",
         status: "International",
     },
 ];
@@ -71,8 +71,8 @@ export default function CompetitionsPage() {
                                             <Trophy className="h-8 w-8 text-primary" />
                                         </div>
                                         <span className={`text-xs font-bold px-3 py-1 rounded-full border ${comp.status === "International"
-                                                ? "bg-purple-500/10 text-purple-400 border-purple-500/20"
-                                                : "bg-green-500/10 text-green-400 border-green-500/20"
+                                            ? "bg-purple-500/10 text-purple-400 border-purple-500/20"
+                                            : "bg-green-500/10 text-green-400 border-green-500/20"
                                             }`}>
                                             {comp.status}
                                         </span>
