@@ -11,6 +11,7 @@ const competitions = [
         title: "International Rover Challenge",
         description: "An engineering design challenge to build a next-generation Mars rover. We push the boundaries of robotics in rough terrains.",
         status: "International",
+        link: "https://roverchallenge.org/irc/",
     },
     {
         id: "wrc",
@@ -23,12 +24,14 @@ const competitions = [
         title: "Smart India Hackathon",
         description: "A nationwide initiative to provide students a platform to solve pressing problems in our daily lives, using hardware and tech solutions.",
         status: "National",
+        link: "https://sih.gov.in/",
     },
     {
         id: "robofest",
         title: "Robofest",
         description: "An annual international robotics challenge focusing on autonomous robotics technologies to inspire students in STEM.",
         status: "International",
+        link: "https://robofest.gujarat.gov.in/Robofest/RoboCategory",
     },
 ];
 
@@ -86,9 +89,17 @@ export default function CompetitionsPage() {
                                     </div>
 
                                     <div className="pt-4 mt-auto">
-                                        <Button variant="outline" className="w-full gap-2 border-primary/20 hover:border-primary/50 hover:bg-primary/5 group-hover:text-primary transition-all">
-                                            View Details <ExternalLink className="h-4 w-4" />
-                                        </Button>
+                                        {comp.link ? (
+                                            <Button asChild variant="outline" className="w-full gap-2 border-primary/20 hover:border-primary/50 hover:bg-primary/5 group-hover:text-primary transition-all">
+                                                <a href={comp.link} target="_blank" rel="noopener noreferrer">
+                                                    View Details <ExternalLink className="h-4 w-4" />
+                                                </a>
+                                            </Button>
+                                        ) : (
+                                            <Button variant="outline" className="w-full gap-2 border-primary/20 hover:border-primary/50 hover:bg-primary/5 group-hover:text-primary transition-all cursor-not-allowed opacity-50">
+                                                View Details <ExternalLink className="h-4 w-4" />
+                                            </Button>
+                                        )}
                                     </div>
                                 </CardContent>
                             </Card>
