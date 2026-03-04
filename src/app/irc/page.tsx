@@ -15,7 +15,7 @@ const subsystems = [
         bgColor: "bg-blue-900/20",
         borderColor: "border-blue-500/30",
         content: "Our custom Rocker-Bogie suspension ensures maximum traction over extreme Martian landscapes. The robotic manipulator arm features 6 degrees of freedom, capable of lifting payloads up to 5kg with mm-level precision.",
-        specs: ["Rocker-Bogie Suspension", "6-DoF Robotic Arm", "Custom 3D-Printed Wheels", "Carbon-Fiber Chassis Frame", "Differential Bar Mechanism", "High-Torque Planetary Gears"],
+        specs: ["Rocker-Bogie Suspension", "6-DoF Robotic Arm", "Custom 3D-Printed Wheels", "Carbon-Fiber Connector Frame", "Differential Bar Mechanism", "High-Torque Planetary Gears"],
     },
     {
         id: "electronics",

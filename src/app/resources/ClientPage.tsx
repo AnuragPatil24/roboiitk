@@ -8,15 +8,6 @@ import Link from "next/link";
 import { useState } from "react";
 import type { ResourcePost } from "@/lib/resources";
 
-// Mock Data for Datasheets
-const resources = {
-    datasheets: [
-        { title: "Arduino Uno R3", type: "Microcontroller", link: "#" },
-        { title: "L298N Motor Driver", type: "Motor Driver", link: "#" },
-        { title: "MPU6050", type: "IMU Sensor", link: "#" },
-    ],
-};
-
 export default function ClientPage({ roadmaps }: { roadmaps: ResourcePost[] }) {
     const [searchQuery, setSearchQuery] = useState("");
     const [selectedTag, setSelectedTag] = useState<string | null>(null);
@@ -45,7 +36,7 @@ export default function ClientPage({ roadmaps }: { roadmaps: ResourcePost[] }) {
                         Learning <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">Resources</span>
                     </h1>
                     <p className="text-muted-foreground mx-auto max-w-2xl text-lg leading-relaxed">
-                        Curated learning materials, datasheets, and documentation for club members.
+                        Curated learning materials and documentation for club members.
                     </p>
                 </div>
 
@@ -86,42 +77,7 @@ export default function ClientPage({ roadmaps }: { roadmaps: ResourcePost[] }) {
                         ))}
                     </div>
                 </section>
-                {/* Datasheets Section */}
-                < section className="mb-16" >
-                    <div className="flex flex-col items-center gap-3 mb-10 text-center">
-                        <div className="p-3 bg-green-500/10 rounded-full">
-                            <Layers className="h-8 w-8 text-green-500" />
-                        </div>
-                        <h2 className="text-3xl font-bold">Datasheets</h2>
-                        <div className="h-1 w-20 bg-gradient-to-r from-transparent via-green-500/50 to-transparent" />
-                    </div>
-                    <div className="grid gap-6 md:grid-cols-3 lg:grid-cols-4 max-w-6xl mx-auto">
-                        {resources.datasheets.map((item, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, scale: 0.9 }}
-                                whileInView={{ opacity: 1, scale: 1 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                            >
-                                <Card className="glass-card text-center hover:border-green-500/50 transition-all duration-300 flex flex-col items-center justify-between h-full group">
-                                    <CardHeader className="pb-2">
-                                        <CardTitle className="text-lg">{item.title}</CardTitle>
-                                        <span className="inline-block px-2 py-1 rounded-full bg-secondary/50 text-xs text-muted-foreground border border-secondary">
-                                            {item.type}
-                                        </span>
-                                    </CardHeader>
-                                    <CardFooter className="pt-4 w-full">
-                                        <Button variant="ghost" size="sm" className="w-full gap-2 hover:bg-green-500/10 hover:text-green-500">
-                                            <Download className="h-4 w-4" /> Download PDF
-                                        </Button>
-                                    </CardFooter>
-                                </Card>
-                            </motion.div>
-                        ))}
-                    </div>
-                </section >
-            </div >
-        </div >
+            </div>
+        </div>
     );
 }
