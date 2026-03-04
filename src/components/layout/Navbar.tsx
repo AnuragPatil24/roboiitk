@@ -21,7 +21,7 @@ const navItems = [
     // but for now keeping them accessible.
     { name: "Alumni", href: "/alumni" },
     { name: "Blogs", href: "/blogs" },
-    { name: "IRC 2027", href: "/irc2027" },
+    { name: "IRC 2027", href: "/irc" },
 ];
 
 export function Navbar() {

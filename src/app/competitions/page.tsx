@@ -11,7 +11,7 @@ const competitions = [
         title: "International Rover Challenge",
         description: "An engineering design challenge to build a next-generation Mars rover. We push the boundaries of robotics in rough terrains.",
         status: "International",
-        link: "https://roverchallenge.org/irc/",
+        link: "/irc",
     },
     {
         id: "wrc",
