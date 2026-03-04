@@ -2,7 +2,7 @@
 title: "What is a Robot in IITK"
 author: "Deepak Gangwar,Member IGVC. "
 date: "12-01-2018"
-image: "/roboiitk/Blog/Deepak.jpg"
+image: "/roboiitk/Blog/What is a Robot in IITK.png"
 description: "Migrating a legacy codebase is never easy, but the benefits of real-time communication were too good to ignore."
 ---
 

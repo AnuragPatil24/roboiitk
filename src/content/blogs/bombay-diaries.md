@@ -3,7 +3,7 @@ title: "Bombay Diaries"
 author: "Manvi Bengani Ex-Coordinator'25"
 date: "20-12-2025"
 description: "A recounting of the experiences at Inter IIT Tech Meet 13.0, facing the No-Prep problem statement, and exploring Mumbai."
-image: "/roboiitk/Blog/Mumbai.jpg"
+image: "/roboiitk/Blog/Bombay.png"
 ---
 It’s the last month of 2024, and I am at the end of fifth semester. This semester was filled with aspirations—securing a summer internship, participating in Inter IIT Aquatics and Inter IIT Tech, and building meaningful relationships with those I worked alongside. 
 

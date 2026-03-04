@@ -2,7 +2,7 @@
 title: "To future coordies..."
 author: "Manvi Bengani, Ex-coordinator'25"
 date: "19-03-2025"
-image: "/roboiitk/Blog/Future.jpg"
+image: "/roboiitk/Blog/To future cordiantors.png"
 description: "To future coordies... Read this to take a few steps backwards in time, but, in our shoes :) — Post-Tenure Clarity :P — A Few Grains of Gratitu..."
 ---
 

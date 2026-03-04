@@ -2,7 +2,7 @@
 title: "Robotics Club: Why it exists?"
 author: "Mayank Mittal"
 date: "01-09-2017"
-image: "/roboiitk/Blog/Why.jpg"
+image: "/roboiitk/Blog/Why Robotics Club Exists.png"
 description: "The whitewashed room in Hall of Residence- XII, equipped with big machines and conference tables, was designed a long time ago to cater to the needs of tinkering minds in the Institute. A lot of efforts by the students and alumni have gone into ensuring that this room, which belongs to the Robotics Club, would be a place where people would come together to explore new projects and test their ideas. Such is the motto of the Science and Technology Council as well, of which the club has been a part of its existence."
 ---
 

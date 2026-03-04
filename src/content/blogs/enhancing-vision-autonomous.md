@@ -2,7 +2,7 @@
 title: "Enhancing Vision of Autonomous Systems"
 author: "Pritesh Kumbhare"
 date: "02-12-2017"
-image: "/roboiitk/Blog/Autonomous.jpg"
+image: "/roboiitk/Blog/Vision.png"
 description: "Enhancing Vision of Autonomous Systems  Most of my robotics experience came from my involvement in Team IGVC last year. Recruited as a member of Tea..."
 ---
 

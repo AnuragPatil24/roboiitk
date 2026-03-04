@@ -2,7 +2,7 @@
 title: "A Different Take on Robotics"
 author: "Abhishek Sahoo"
 date: "25-09-2017"
-image: "/roboiitk/Blog/Diff.jpg"
+image: "/roboiitk/Blog/Different Take.png"
 description: "Robotics always brings our attention to programming and electronics.However, equally important is the mechanical aspects of the robot, which is the first step towards good and effective robotics.In the following article, I would like to support my statement by sharing one of my memories.The best experience I have had till date is my involvement in Robocon in my first year at IIT Kanpur.I consider myself honoured and very lucky to be part of this great team and the great things we achieved together."
 ---
 
