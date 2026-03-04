@@ -50,14 +50,14 @@ const subsystems = [
 ];
 
 const teamData = [
-    { name: "Chinar Mhatre", role: "Team Head", department: "Management", email: "chinarrm23@iitk.ac.in", image: "/roboiitk/irc_team/Chinar.jpg" },
-    { name: "Vishnu Sarathy", role: "Electronics", email: "vishnusb24@iitk.ac.in", image: "/roboiitk/irc_team/Vishnu Sarathy.jpg" },
-    { name: "Rudraksh", role: "Software", email: "rudrakshk24@iitk.ac.in", image: "/roboiitk/irc_team/Rudraksh.jpeg" },
-    { name: "Anurag Patil", role: "Mechanical", email: "anuragp24@iitk.ac.in", image: "/roboiitk/irc_team/Anurag Patil.jpeg" },
-    { name: "Harsh Chandwani", role: "Electronics", email: "charsh24@iitk.ac.in", image: "/roboiitk/irc_team/Harsh Chandwani.jpeg" },
-    { name: "Arnav Gupta", role: "Mechanical", email: "arnavu24@iitk.ac.in", image: "/roboiitk/irc_team/Arnav Gupta.jpeg" },
-    { name: "Sushil Krishna K", role: "Software", email: "sushilk24@iitk.ac.in", image: "/roboiitk/irc_team/Sushil Krishna K.jpg" },
-    { name: "Manant Singhal", role: "Mechanical", email: "msinghal24@iitk.ac.in", image: "/roboiitk/irc_team/Manant Singhal.jpg" },
+    { name: "Chinar Mhatre", role: "Team Head", department: "Management", email: "chinarrm23@iitk.ac.in", image: "/roboiitk/IRC_Team/Chinar.jpg" },
+    { name: "Vishnu Sarathy", role: "Electronics", email: "vishnusb24@iitk.ac.in", image: "/roboiitk/IRC_Team/Vishnu Sarathy.jpg" },
+    { name: "Rudraksh", role: "Software", email: "rudrakshk24@iitk.ac.in", image: "/roboiitk/IRC_Team/Rudraksh.jpeg" },
+    { name: "Anurag Patil", role: "Mechanical", email: "anuragp24@iitk.ac.in", image: "/roboiitk/IRC_Team/Anurag Patil.jpeg" },
+    { name: "Harsh Chandwani", role: "Electronics", email: "charsh24@iitk.ac.in", image: "/roboiitk/IRC_Team/Harsh Chandwani.jpeg" },
+    { name: "Arnav Gupta", role: "Mechanical", email: "arnavu24@iitk.ac.in", image: "/roboiitk/IRC_Team/Arnav Gupta.jpeg" },
+    { name: "Sushil Krishna K", role: "Software", email: "sushilk24@iitk.ac.in", image: "/roboiitk/IRC_Team/Sushil Krishna K.jpg" },
+    { name: "Manant Singhal", role: "Mechanical", email: "msinghal24@iitk.ac.in", image: "/roboiitk/IRC_Team/Manant Singhal.jpg" },
 ];
 
 export default function IRC2027Page() {
@@ -100,19 +100,19 @@ export default function IRC2027Page() {
                         initial={{ opacity: 0, scale: 0.98 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="w-full aspect-[3/1] min-h-[300px] bg-slate-900/50 border border-slate-800 rounded-3xl relative flex flex-col items-center justify-center overflow-hidden group shadow-2xl backdrop-blur-sm"
+                        className="w-full aspect-video md:aspect-[21/9] bg-slate-900 border border-slate-800 rounded-3xl relative flex flex-col items-center justify-center overflow-hidden group shadow-2xl"
                     >
-                        {/* Grid lines */}
-                        <div className="absolute inset-0 opacity-10 bg-[linear-gradient(rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:32px_32px]" />
+                        <Image
+                            src="/roboiitk/rover_photo.png"
+                            alt="ARC Rover"
+                            fill
+                            className="object-contain transition-transform duration-500 group-hover:scale-[1.02]"
+                        />
 
-                        <div className="relative z-10 text-center flex flex-col items-center gap-4">
-                            <div className="h-20 w-20 bg-slate-800/50 rounded-2xl border border-slate-700/50 flex items-center justify-center group-hover:bg-blue-900/30 group-hover:border-blue-500/50 transition-colors shadow-lg">
-                                <Layers className="h-10 w-10 text-slate-400 group-hover:text-blue-400 transition-colors" />
-                            </div>
-                            <div>
-                                <h3 className="text-xl md:text-2xl font-bold text-white tracking-wide">Rover 3D Architecture Render</h3>
-                                <p className="text-sm text-slate-500 font-medium mt-2">[ High Definition Placeholder ]</p>
-                            </div>
+                        {/* Overlay text - only shows clearly on hover or subtlely */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-end pb-8">
+                            <h3 className="text-xl md:text-2xl font-bold text-white tracking-wide">Rover System Architecture</h3>
+                            <p className="text-sm text-blue-400 font-medium mt-2 uppercase tracking-widest">Official Competition Platform</p>
                         </div>
                     </motion.div>
                 </section>
@@ -245,8 +245,8 @@ export default function IRC2027Page() {
                             >
                                 <div className={`flex items-center gap-6 ${i === 0 ? "flex-col sm:flex-row" : "flex-col text-center"}`}>
 
-                                    {/* Soft Rounded Photo / Placeholder */}
-                                    <div className={`bg-slate-800/50 border border-slate-700 rounded-full flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-300 relative overflow-hidden ${i === 0 ? "h-24 w-24 md:h-28 md:w-28" : "h-20 w-20"}`}>
+                                    {/* Rounded Photo / Placeholder */}
+                                    <div className={`bg-slate-900 border border-slate-800 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-300 relative overflow-hidden shadow-inner ${i === 0 ? "h-32 w-32 md:h-40 md:w-40" : "h-24 w-24"}`}>
                                         {"image" in member && member.image ? (
                                             <Image src={member.image} alt={member.name} fill className="object-cover" />
                                         ) : (
