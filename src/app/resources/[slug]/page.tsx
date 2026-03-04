@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CustomLink } from "@/components/mdx/CustomLink";
 
 export async function generateStaticParams() {
     const posts = getResourcePosts();
@@ -25,8 +26,11 @@ export default async function ResourcePostPage({ params }: { params: Promise<{ s
             {/* Hero Header */}
             <div className="container px-4 md:px-6 mb-12 mx-auto flex flex-col items-center">
                 <div className="w-full max-w-3xl flex justify-start mb-8">
-                    <Link href="/resources" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary transition-colors">
-                        <ArrowLeft className="mr-2 h-4 w-4" /> Back to Resources
+                    <Link
+                        href="/resources"
+                        className="inline-flex items-center gap-2 text-primary hover:text-white transition-colors mb-6"
+                    >
+                        <ArrowLeft className="h-4 w-4" /> View All Roadmaps
                     </Link>
                 </div>
 
@@ -43,13 +47,13 @@ export default async function ResourcePostPage({ params }: { params: Promise<{ s
             {/* Content */}
             <div className="container px-4 md:px-6 mx-auto flex flex-col items-center">
                 <div className="w-full prose prose-invert prose-lg max-w-3xl mx-auto text-justify prose-headings:text-left prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-code:text-primary prose-pre:bg-secondary/50 prose-pre:border prose-pre:border-border/50">
-                    <MDXRemote source={post.content} />
+                    <MDXRemote source={post.content} components={{ a: CustomLink }} />
                 </div>
 
                 <div className="max-w-3xl mx-auto mt-16 pt-8 border-t border-border/50 flex justify-center">
                     <Button asChild variant="outline" className="gap-2">
                         <Link href="/resources">
-                            <ArrowLeft className="h-4 w-4" /> View All Tutorials
+                            <ArrowLeft className="h-4 w-4" /> View All Roadmaps
                         </Link>
                     </Button>
                 </div>

@@ -10,6 +10,7 @@ export interface ResourcePost {
     image?: string;
     description: string;
     content: string;
+    tags?: string[];
 }
 
 export function getResourcePosts(): ResourcePost[] {

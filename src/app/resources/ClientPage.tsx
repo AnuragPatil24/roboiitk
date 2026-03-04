@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/componen
 import { Button } from "@/components/ui/button";
 import { FileText, Download, BookOpen, Layers } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 import type { ResourcePost } from "@/lib/resources";
 
 // Mock Data for Datasheets
@@ -16,7 +17,20 @@ const resources = {
     ],
 };
 
-export default function ClientPage({ tutorials }: { tutorials: ResourcePost[] }) {
+export default function ClientPage({ roadmaps }: { roadmaps: ResourcePost[] }) {
+    const [searchQuery, setSearchQuery] = useState("");
+    const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+    // Get all unique tags from roadmaps
+    const allTags = Array.from(new Set(roadmaps.flatMap((post) => post.tags || [])));
+
+    const filteredRoadmaps = roadmaps.filter((post) => {
+        const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            post.description.toLowerCase().includes(searchQuery.toLowerCase());
+        const matchesTag = selectedTag ? (post.tags || []).includes(selectedTag) : true;
+        return matchesSearch && matchesTag;
+    });
+
     return (
         <div className="flex flex-col min-h-screen bg-background py-16 md:py-24 relative overflow-hidden">
             {/* Background Decoration */}
@@ -35,17 +49,17 @@ export default function ClientPage({ tutorials }: { tutorials: ResourcePost[] })
                     </p>
                 </div>
 
-                {/* Tutorials Section */}
+                {/* Roadmaps Section */}
                 <section className="mb-20 w-full">
                     <div className="flex flex-col items-center gap-3 mb-10 text-center">
                         <div className="p-3 bg-primary/10 rounded-full">
                             <BookOpen className="h-8 w-8 text-primary" />
                         </div>
-                        <h2 className="text-3xl font-bold">Tutorials</h2>
+                        <h2 className="text-3xl font-bold">Roadmaps</h2>
                         <div className="h-1 w-20 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
                     </div>
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-                        {tutorials.map((item, i) => (
+                        {filteredRoadmaps.map((item, i) => (
                             <motion.div
                                 key={item.slug}
                                 initial={{ opacity: 0, y: 20 }}
@@ -72,9 +86,8 @@ export default function ClientPage({ tutorials }: { tutorials: ResourcePost[] })
                         ))}
                     </div>
                 </section>
-
                 {/* Datasheets Section */}
-                <section className="mb-16">
+                < section className="mb-16" >
                     <div className="flex flex-col items-center gap-3 mb-10 text-center">
                         <div className="p-3 bg-green-500/10 rounded-full">
                             <Layers className="h-8 w-8 text-green-500" />
@@ -107,8 +120,8 @@ export default function ClientPage({ tutorials }: { tutorials: ResourcePost[] })
                             </motion.div>
                         ))}
                     </div>
-                </section>
-            </div>
-        </div>
+                </section >
+            </div >
+        </div >
     );
 }
