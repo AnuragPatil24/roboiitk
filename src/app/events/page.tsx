@@ -32,14 +32,14 @@ const events = [
         id: 4,
         title: "Robodive",
         timing: "November - Januray",
-        description: "Break through the theory and get your hands dirty this winter. Robodive is an intensive, mentor-led program designed to take you from a basic understanding of electronics to deploying fully autonomous systems.This isn't a lecture series—it's a mission. Over 8 weeks, you will work in small squads under the guidance of Sectratories to solve a complex robotics challenge.",
+        description: "Break through the theory and get your hands dirty this winter. Robodive is an intensive, mentor-led program designed to take you from a basic understanding of electronics to deploying fully autonomous systems.This isn't a lecture series—it's a mission. Over 8 weeks, you will work in small squads under the guidance of Secretaries to solve a complex robotics challenge.",
         type: "Mentorship Programme",
     },
     {
         id: 5,
         title: "Robothon",
         timing: "February - March",
-        description: "Robothon is a three-stage competition by Robotics Club IITK challenging students to solve agricultural issues using robotics ideation, hardware implementation, and final project development.",
+        description: "Robothon is a two-stage competition by Robotics Club IITK challenging students to solve agricultural issues using robotics ideation, hardware implementation, and final project development.",
         type: "Competition",
     },
 ];

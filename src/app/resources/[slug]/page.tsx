@@ -46,7 +46,7 @@ export default async function ResourcePostPage({ params }: { params: Promise<{ s
 
             {/* Content */}
             <div className="container px-4 md:px-6 mx-auto flex flex-col items-center">
-                <div className="w-full prose prose-invert prose-lg max-w-3xl mx-auto text-justify prose-headings:text-left prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-code:text-primary prose-pre:bg-secondary/50 prose-pre:border prose-pre:border-border/50">
+                <div className="w-full prose prose-invert prose-lg max-w-3xl mx-auto text-justify prose-headings:text-left prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-code:text-primary prose-pre:bg-secondary/50 prose-pre:border prose-pre:border-border/50 prose-h2:mt-12 prose-h2:mb-6 prose-h3:mt-8 prose-h3:mb-4 prose-p:mb-6 prose-li:my-2">
                     <MDXRemote source={post.content} components={{ a: CustomLink }} />
                 </div>
 

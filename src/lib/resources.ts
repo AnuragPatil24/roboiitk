@@ -16,7 +16,7 @@ export interface ResourcePost {
 export function getResourcePosts(): ResourcePost[] {
     if (!fs.existsSync(contentDirectory)) return [];
 
-    const fileNames = fs.readdirSync(contentDirectory);
+    const fileNames = fs.readdirSync(contentDirectory).filter(fn => fn.endsWith('.md'));
     const allPosts = fileNames.map((fileName) => {
         const slug = fileName.replace(/\.md$/, "");
         const fullPath = path.join(contentDirectory, fileName);
