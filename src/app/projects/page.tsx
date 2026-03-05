@@ -16,7 +16,7 @@ const projects = [
             "A rover is an autonomous or remote-controlled vehicle designed to traverse extraterrestrial terrain. Equipped with specialized sensors and robust suspension, it explores planetary surfaces, collects vital geological samples, and searches for biological presence",
         image: "/roboiitk/projects/rover-f.png", // Placeholder
         techStack: ["ROS", "Electronics", "Rockerbogie", "Differential"],
-        docLink: "Coming Soon",
+        docLink: "#",
     },
     {
         id: "Hexapod",
@@ -37,7 +37,7 @@ const projects = [
         image: "/roboiitk/projects/Turk.png", // Placeholder
         techStack: ["Mechanical Design", "Computer Vision", "Inverse Kinematics"],
         docLink: "#",
-        githubLink: "#",
+        githubLink: "https://github.com/UwUBabushkaUwU/Mechanical-Turk",
     },
     {
         id: "BallBot",
