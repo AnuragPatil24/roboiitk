@@ -1,7 +1,7 @@
 ---
 title: "Bombay Diaries"
 author: "Manvi Bengani Ex-Coordinator'25"
-date: "20-12-2025"
+date: "20-12-2024"
 description: "A recounting of the experiences at Inter IIT Tech Meet 13.0, facing the No-Prep problem statement, and exploring Mumbai."
 image: "/roboiitk/Blog/Bombay.png"
 ---

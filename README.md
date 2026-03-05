@@ -1,36 +1,122 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Robotics Club IIT Kanpur - Official Website
 
-## Getting Started
+Welcome to the source code of the official Robotics Club IIT Kanpur website. This project is built using **Next.js 15**, **Tailwind CSS**, and **Framer Motion** for a modern, high-performance, and modular experience.
 
-First, run the development server:
+## 🚀 Getting Started
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18.0.0 or higher)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/AnuragPatil24/roboiitk.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🛠️ How to Update Content
+
+The website is designed to be **data-driven**, meaning you can update most of the content without ever touching the UI components or layout logic.
+
+### 1. Updating Team, Events, or Competitions
+All major site data is centralized in `src/data/`.
+
+- **Team Members**: Edit `src/data/team.ts`. You can add new faculty, coordinators, or secretaries here.
+- **Timeline Events**: Edit `src/data/events.ts`. Add new sessions, workshops, or competitions to the chronological list.
+- **Major Competitions**: Edit `src/data/competitions.ts`. Update competition descriptions or official links.
+
+**Format Example (Team Member):**
+```typescript
+{
+  name: "John Doe",
+  role: "Coordinator",
+  image: "/roboiitk/Team/John.jpg",
+  linkedin: "https://linkedin.com/in/johndoe",
+  github: "https://github.com/johndoe",
+  email: "johndoe@iitk.ac.in",
+  contact: "+91 9876543210"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Writing Blog Posts
+Blog posts are stored as **Markdown** files in `src/content/blogs/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- To add a new post, create a `.md` file in that directory.
+- Use the following frontmatter at the top:
+  ```markdown
+  ---
+  title: "My Amazing Robot"
+  date: "2024-03-04"
+  description: "A brief summary of the blog post."
+  image: "/roboiitk/Blog/my-image.jpg"
+  author: "Robot Master"
+  ---
+  Your blog content goes here...
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3. Updating Learning Resources & Roadmaps
+Learning roadmaps are stored in `src/content/resources/`.
 
-## Learn More
+- These are also Markdown files.
+- To update the **Electronics**, **Mechanical**, **Software**, or **Computer Vision** roadmaps, simply edit the corresponding `.md` file.
 
-To learn more about Next.js, take a look at the following resources:
+### 4. Managing Images
+All static assets (images, PDFs, SVGs) should be placed in the `public/` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Recommended paths:**
+  - `public/Team/`: Team headshots.
+  - `public/Blog/`: Cover images for blogs.
+  - `public/backgrounds/`: Page background images.
+  - `public/projects/`: Project showcase images.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> [!IMPORTANT]
+> Since this project is deployed on GitHub Pages under the `/roboiitk` subpath, always prefix image paths with `/roboiitk/` (e.g., `/roboiitk/Team/photo.jpg`).
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🏗️ Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+├── src/
+│   ├── app/            # Next.js App Router (Pages & Layouts)
+│   ├── components/     # Reusable UI Components
+│   │   ├── team/       # Team-specific components
+│   │   ├── events/     # Timeline components
+│   │   └── ui/         # Base UI elements (Buttons, Cards, PageHero)
+│   ├── content/        # Markdown content (Blogs & Resources)
+│   ├── data/           # Centralized site data (TS files)
+│   └── lib/            # Utility functions & content fetching
+├── public/             # Static assets (Images, Documents)
+└── tailwind.config.ts  # Design tokens and themes
+```
+
+---
+
+## 📡 Deployment
+
+The site is configured for automatic deployment via **GitHub Actions**.
+
+1. Commit your changes to the `main` branch.
+2. The `deploy.yml` workflow will automatically build and push the site to the `gh-pages` branch.
+3. The live site is available at: [https://roboticsclubiitk.github.io/2025/03/09/To-future-coordies/](https://roboticsclubiitk.github.io/2025/03/09/To-future-coordies/) (or your configured custom domain).
+
+---
+
+## 🤝 Contributing
+
+1. Create a new branch: `git checkout -b feature/your-feature`.
+2. Make your changes and verify with `npm run build`.
+3. Push to your fork and submit a Pull Request.
+
+**Note:** For UI changes, please use the shared components in `src/components/ui/` to ensure visual consistency across the entire site.
